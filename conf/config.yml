@@ -1,0 +1,17 @@
+---
+server:
+  assets_path: /go/src/github.com/maklesoft/padlock-cloud/assets
+  port: 8081
+  base_url: https://xxxxxx.xxxx.xx
+  cors: true
+leveldb:
+  path: /db
+email:
+  server: smtp.xxxx.xx
+  port: 80
+  user: xxx@xxxx.xx
+  password: xxxxxxxx
+log:
+  log_file: /log.txt
+  err_file: /err.txt
+  notify_errors: 314946925@qq.com
