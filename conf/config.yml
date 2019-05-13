@@ -1,6 +1,6 @@
 ---
 server:
-  assets_path: /go/src/github.com/maklesoft/padlock-cloud/assets
+  assets_path: /go/src/github.com/lzxz1234/padlock-cloud/assets
   port: 8081
   base_url: https://xxxxxx.xxxx.xx
   cors: true

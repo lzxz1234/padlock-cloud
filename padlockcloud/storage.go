@@ -96,7 +96,10 @@ func (s *LevelDBStorage) Open() error {
 	for t, loc := range StorableTypes {
 		db, err := leveldb.OpenFile(filepath.Join(s.Config.Path, loc), nil)
 		if err != nil {
-			return err
+			db, err = leveldb.RecoverFile(filepath.Join(s.Config.Path, loc), nil)
+			if err != nil {
+				return err
+			}
 		}
 		s.stores[t] = db
 	}
