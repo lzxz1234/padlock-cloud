@@ -1,2 +1,6 @@
+#
 padlock-cloud
-db
+db/
+
+# IDE
+.idea/
